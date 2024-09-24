@@ -1,6 +1,6 @@
 package com.letier.brandon.notescleanarch.feature_note.domain.model
 
-data class Note(
+data class NoteEntity(
     val id: Int? = null,
     val title: String,
     val content: String,
