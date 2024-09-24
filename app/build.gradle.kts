@@ -3,16 +3,17 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.devtools.ksp)
     alias(libs.plugins.dagger.hilt.android)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "com.letier.brandon.notescleanarch"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.letier.brandon.notescleanarch"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -54,6 +55,8 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures.compose = true
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
@@ -65,6 +68,8 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui.graphics.android)
     implementation(libs.hilt.compiler)
+    implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.activity.compose)
     annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.androidx.runner)
     implementation(libs.hilt.android.testing)
