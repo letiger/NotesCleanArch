@@ -6,7 +6,7 @@ import com.letier.brandon.notescleanarch.feature_note.domain.model.NoteEntity
 
 @Database(
     entities = [NoteEntity::class],
-    version = 1
+    version = 2
 )
 abstract class NoteDatabase: RoomDatabase() {
     abstract val noteDao: NoteDao

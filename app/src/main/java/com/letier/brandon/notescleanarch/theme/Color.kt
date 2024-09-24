@@ -4,6 +4,14 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.ui.graphics.Color
 
+val blue = Color(0xCE21D7EE)
+val violet = Color(0xFFBB9FEE)
+val yellow = Color(0xE2FFC107)
+val pink = Color(0xFFF710B5)
+val red = Color(0xE2FF0739)
+val ash = Color(0xFFB5B8BD)
+val pale_green = Color(0xFFAFB42B)
+
 val primaryLight = Color(0xFF435E91)
 val onPrimaryLight = Color(0xFFFFFFFF)
 val primaryContainerLight = Color(0xFFD7E2FF)
